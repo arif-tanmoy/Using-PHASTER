@@ -6,7 +6,7 @@ PHASTER (PHAge Search Tool Enhanced Release) is a web server for the rapid ident
 
 ### Intro and use for each of the scripts
 #### upload_contigs_to_PHASTER.py
-The script will scan the the folder for *.fasta* files and upload those files to PHASTER using public API. PHASTER server relays back a JOBID. This script will receive the JOBID from PHASTER and save it in a *.jobid* file in the same folder. USE:
+The script will scan the the folder for *.fasta* files and upload those files to PHASTER using public API. PHASTER server relays back a JOBID. This script will receive the JOBID from PHASTER and save it in a *.jobid* file in the same folder.
 ```
 python upload_contigs_to_PHASTER.py <contig folder>
 ```
