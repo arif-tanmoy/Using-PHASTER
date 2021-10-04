@@ -1,6 +1,7 @@
 '''
 This script is to upload a bunch of contig files to PHASTER using their API. 
 Author: Arif Mohammad Tanmoy
+Email: arif.tanmoy@gmail.com
 Use: python upload_contigs_to_PHASTER.py <contig folder>
 *** All file in the <contig_folder> with ".fasta" extension will be considered as contig files. 
 
@@ -18,7 +19,7 @@ contigs = [f for f in [join(mypath, a) for a in listdir(mypath) if isfile(join(m
 
 # UPLOAD the contigs to PHASTER
 for i in range(0, len(contigs)):
-	name = str(contigs[i]).split('/')[1].split('.')[0]
+	name = str(contigs[i]).split('/')[-1].split('.')[0]
 	upload = 'cd '+mypath+' && '+'wget --post-file="'+str(contigs[i])+'" "http://phaster.ca/phaster_api?contigs=1" -O '+name+'.jobid'
 	print "Uploading: "+name
 	os.system(upload)
