@@ -1,4 +1,4 @@
-# Working_with_PHASTER
+# Using PHASTER
 A few scripts to upload multiple contig files to PHASTER (*using API*), check if the results are ready and download the summary results in a file. I hope, these will help to make someone's life a bit more easier. 
 
 ## What is PHASTER?
